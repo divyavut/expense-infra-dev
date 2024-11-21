@@ -6,3 +6,7 @@ variable  "environment" {
   type        = string
   default     = "dev"
 }
+variable "internet_user" {
+    type = list(string)
+    default = ["0.0.0.0/0"]
+}
